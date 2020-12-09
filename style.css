@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+.accordion {
+    margin: 0 auto;
+    width: 100%;
+
+}
+.accordeon__wrap {
+   border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.accordeon__head {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.accordeon__head:after {
+    content: "+";
+}
+
+.accordeon__body {
+    height: 0;
+    overflow: hidden;
+    /*transition: max-height .4s ease-in;*/
+}
+
+.opened .accordeon__body {
+    height: auto;
+
+}
+
+.accordeon__body > * {
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
